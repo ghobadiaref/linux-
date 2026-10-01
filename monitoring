@@ -1,0 +1,2 @@
+watch -d -n1 -t -g  ls -l
+apt install progress pv glances 
