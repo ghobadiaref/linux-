@@ -1,0 +1,5 @@
+########## DNS checking ################
+nslookup registry.k8s.io
+dig registry.k8s.io +short
+
+########## DNS checking ################
