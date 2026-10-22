@@ -1,5 +1,8 @@
 ########## DNS checking ################
+getent hosts registry.k8s.io
 nslookup registry.k8s.io
 dig registry.k8s.io +short
-
+curl -v https://registry.k8s.io/v2/
+curl -vL https://registry.k8s.io/v2/ # follow redirect 
+curl -sS -L -D - -o /dev/null https://registry.k8s.io/v2/
 ########## DNS checking ################
